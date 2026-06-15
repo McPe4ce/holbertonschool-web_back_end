@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Script that calculates the average run time of the wait_n function"""
 import asyncio
 import time
 wait_n = __import__('1-concurrent_coroutines').wait_n
