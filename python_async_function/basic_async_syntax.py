@@ -10,3 +10,6 @@ async def wait_random(max_delay: int = 10) -> float:
     da_delay = random.uniform(0, max_delay)
     await asyncio.sleep(da_delay)
     return da_delay
+
+if __name__ == "__main__":
+    pass
