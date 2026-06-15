@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """Script that uses an asynchronous coroutine that prints with a delay"""
 
 import asyncio
