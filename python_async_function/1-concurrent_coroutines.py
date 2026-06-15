@@ -5,7 +5,7 @@ from basic_async_syntax import wait_random
 import asyncio
 
 
-async def wait_n(n, max_delay) -> float:
+async def wait_n(n: int, max_delay: int) -> float:
     """ Return the list of all the delays"""
     delays = []
 
