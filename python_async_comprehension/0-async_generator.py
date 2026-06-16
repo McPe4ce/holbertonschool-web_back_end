@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Scrip that returns a random num from an async_generator"""
+"""Module that provides an async generator yielding random floats."""
 import asyncio
 import random
+from typing import AsyncGenerator
 
 
-async def async_generator():
-    """Scrip that returns a random num from an async_generator"""
+async def async_generator() -> AsyncGenerator[float, None]:
+    """Loop 10 times, wait 1 second asynchronously, then yield a random float between 0 and 10."""
     for _ in range(10):
         await asyncio.sleep(1)
-        yield random.random()
+        yield random.uniform(0, 10)
